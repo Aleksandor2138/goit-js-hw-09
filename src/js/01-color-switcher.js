@@ -10,7 +10,7 @@ start.onclick = () => {
     console.log(`start`)
     start.disabled = true;
     stop.disabled = false;
-    timerId = setInterval(intervalColor, 1000);
+    timer = setInterval(intervalColor, 1000);
     intervalColor();
 }
 const intervalColor = () => {
@@ -19,6 +19,6 @@ const intervalColor = () => {
         console.log(`stop`);
         start.disabled = false;
         stop.disabled = true;
-        clearInterval(timerId);
+        clearInterval(timer);
     };
 }
