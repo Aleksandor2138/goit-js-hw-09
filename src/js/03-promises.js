@@ -7,7 +7,7 @@ const amount = document.querySelector('input[name="amount"]');
 
 const submitClick = (event) => {
   event.preventDefault();
-  let delay = Number(first.value);
+  let delay =first.value;
   for (let position = 1; position <= amount.value; position += 1) {
     createPromise(position, delay)
       .then(({ position, delay }) => {
